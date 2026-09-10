@@ -9,6 +9,7 @@
 #define lectura A0
 
 int valor=0;      //valor obtenido de la lectura
+int voltaje=0;
 
 void setup() {
 
@@ -42,8 +43,8 @@ void loop() {
 
   espera();
 
-  valor=analogRead(lectura);
- 
-  Serial.println(valor);
-
+  valor=analogRead(lectura);// valor del ADC
+   //Serial.println(valor);
+   voltaje=valor*5/1024;
+    Serial.println(voltaje);
 }
