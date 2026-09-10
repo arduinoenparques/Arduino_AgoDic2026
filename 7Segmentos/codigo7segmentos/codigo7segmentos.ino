@@ -52,13 +52,22 @@ void loop() {
   valor=analogRead(lectura);// valor del ADC
    //Serial.println(valor);
    voltaje=valor*5/1024;
-  a1=voltaje&&"0001";
-  Serial.println(String("valor en voltimetro") + voltaje + String(" Input A del decoder= ") + a1);
-  b1=valor&&"0010";
-  Serial.println(String("valor en voltimetro") + voltaje + String(" Input B del decoder= ") + b1);
-  c1=voltaje&&"0100";
-  Serial.println(String("valor en voltimetro") + voltaje + String(" Input C del decoder= ") + c1);
-  d1=valor&&"1000";
-  Serial.println(String("valor en voltimetro") + voltaje + String(" Input C del decoder= ") + d1);
+
+   Serial.println(voltaje,BIN);
+  a1=(voltaje >>0)  ;
+  Serial.println(String("valor en voltimetro ") + voltaje + String(" Input A del decoder= ") + a1);
+  b1=(voltaje >>1)  ;
+  Serial.println(String("valor en voltimetro ") + voltaje + String(" Input B del decoder= ") + b1);
+  c1=(voltaje >>2)  ;
+  Serial.println(String("valor en voltimetro ") + voltaje + String(" Input C del decoder= ") + c1);
+  d1=(voltaje >>3)  ;
+  Serial.println(String("valor en voltimetro ") + voltaje + String(" Input D del decoder= ") + d1);
   //Serial.println(voltaje);
+  Serial.println("---------------------------------------------------");
+  espera();
+  digitalWrite(a,a1);
+  digitalWrite(b,b1);
+  digitalWrite(c,c1);
+  digitalWrite(d,d1);
+
 }
