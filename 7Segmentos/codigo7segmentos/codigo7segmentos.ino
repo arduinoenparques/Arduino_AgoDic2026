@@ -44,6 +44,6 @@ void loop() {
 
   valor=analogRead(lectura);
  
-  Serial.println(valor)
+  Serial.println(valor);
 
 }
