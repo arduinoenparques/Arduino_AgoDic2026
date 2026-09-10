@@ -6,7 +6,14 @@
 #define f 8
 #define g 7
 
+#define lectura A0
+
+int valor=0;      //valor obtenido de la lectura
+
 void setup() {
+
+  Serial.begin(9600);
+
   pinMode(a,OUTPUT);
   pinMode(b,OUTPUT);
   pinMode(c,OUTPUT);
@@ -14,6 +21,8 @@ void setup() {
   pinMode(e,OUTPUT);
   pinMode(f,OUTPUT);
   pinMode(g,OUTPUT);
+
+  pinMode(lectura,INPUT);
 }
 
 void espera()
@@ -32,5 +41,9 @@ void loop() {
   digitalWrite(g,HIGH);
 
   espera();
+
+  valor=analogRead(lectura);
+ 
+  Serial.println(valor);
 
 }
