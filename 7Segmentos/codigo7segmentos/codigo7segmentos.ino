@@ -14,9 +14,23 @@ void setup() {
   pinMode(e,OUTPUT);
   pinMode(f,OUTPUT);
   pinMode(g,OUTPUT);
+}
 
+void espera()
+{
+  delay(1000);
 }
 
 void loop() {
+
+  digitalWrite(a,HIGH);
+  digitalWrite(b,LOW);
+  digitalWrite(c,LOW);
+  digitalWrite(d,HIGH);
+  digitalWrite(e,HIGH);
+  digitalWrite(f,HIGH);
+  digitalWrite(g,HIGH);
+
+  espera();
 
 }
