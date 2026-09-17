@@ -2,13 +2,17 @@
 #define b 12
 #define c 11
 #define d 10
-#define e 9
-#define f 8
-#define g 7
 
 #define lectura A0
 
+
+int a1;
+int b1;
+int c1;
+int d1;
+
 int valor=0;      //valor obtenido de la lectura
+int voltaje=0;
 
 void setup() {
 
@@ -18,10 +22,7 @@ void setup() {
   pinMode(b,OUTPUT);
   pinMode(c,OUTPUT);
   pinMode(d,OUTPUT);
-  pinMode(e,OUTPUT);
-  pinMode(f,OUTPUT);
-  pinMode(g,OUTPUT);
-
+ 
   pinMode(lectura,INPUT);
 }
 
@@ -32,18 +33,27 @@ void espera()
 
 void loop() {
 
-  digitalWrite(a,HIGH);
-  digitalWrite(b,LOW);
-  digitalWrite(c,LOW);
-  digitalWrite(d,HIGH);
-  digitalWrite(e,HIGH);
-  digitalWrite(f,HIGH);
-  digitalWrite(g,HIGH);
-
+  
   espera();
 
-  valor=analogRead(lectura);
+  valor=analogRead(lectura);// valor del ADC
+  voltaje=valor*5/1023;
+  a1=bitRead(voltaje,0);
+  b1=bitRead(voltaje,1);
+  c1=bitRead(voltaje,2);
+  d1=bitRead(voltaje,3);
+   Serial.println(voltaje,BIN);
  
-  Serial.println(valor);
+  Serial.println(String("valor en voltimetro ") + voltaje + String(" Input A del decoder= ") + a1);  
+  Serial.println(String("valor en voltimetro ") + voltaje + String(" Input B del decoder= ") + b1);  
+  Serial.println(String("valor en voltimetro ") + voltaje + String(" Input C del decoder= ") + c1);  
+  Serial.println(String("valor en voltimetro ") + voltaje + String(" Input D del decoder= ") + d1);
+  
+  Serial.println("---------------------------------------------------");
+  espera();
+  digitalWrite(a,a1);
+  digitalWrite(b,b1);
+  digitalWrite(c,c1);
+  digitalWrite(d,d1);
 
 }
