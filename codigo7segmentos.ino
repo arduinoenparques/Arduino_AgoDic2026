@@ -70,7 +70,7 @@ void loop() {
 
 Serial.println("---------------------------------------------------");
   for(int x=0;x<4;x++){
-    Serial.println(String("El valor en la direccion ")+ x + String("es igual a->")+EEPROM.read(x));
+    Serial.println(String("El valor en la direccion ")+ x + String("es igual a-> ")+EEPROM.read(x));
     }
   Serial.println("---------------------------------------------------");
   espera();
