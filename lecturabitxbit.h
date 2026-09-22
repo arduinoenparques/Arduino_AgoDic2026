@@ -1,5 +1,5 @@
 
-void lecturabitxbit(lectura){
+void lecturabitxbit(){
         valor=analogRead(lectura);// valor del ADC
         voltaje=valor*5/1023;
         a1=bitRead(voltaje,0);

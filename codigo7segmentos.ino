@@ -42,7 +42,7 @@ void loop() {
 
     espera();
     lecturabitxbit();        
-    escribeenMemoria();     
+    escribeEeprom();     
     Serial.println(voltaje,BIN); 
     imprimeLecturas();
     espera();
