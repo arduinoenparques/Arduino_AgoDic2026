@@ -1,0 +1,162 @@
+[33mcommit 0ac0ae006787642629a5c44495d670c4187f9cfa[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31mdestino/main[m[33m)[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Tue Sep 22 11:54:20 2026 -0600
+
+    modificando
+
+[33mcommit e201bd703bb7864102c0b834911c7e15de34a703[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 17 15:07:35 2026 -0600
+
+    creacion de funciones
+
+[33mcommit d11bd686d0fc3eaf5de9d31eb00601de25611144[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 17 14:44:15 2026 -0600
+
+    uso de EEPROM
+
+[33mcommit c621bbcb1819859dc6dfa5b9a3908a41b4b7e847[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 17 14:38:12 2026 -0600
+
+    uso de EEPROM
+
+[33mcommit 123691699b78ad424abf4842abb3790d3b9373e0[m
+Merge: c7b7649 e77a4ba
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 17 14:07:58 2026 -0600
+
+    Merge branch 'main' of https://github.com/arduinoenparques/Arduino_AgoDic2026
+
+[33mcommit c7b7649add711bf5a883964514158fa74656aba7[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 17 13:49:56 2026 -0600
+
+    codigo modificado con lectura de bit x bit
+
+[33mcommit e77a4bac482b7a468e510c331ed79986d762b0bd[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 10 15:22:33 2026 -0600
+
+    probando corrimiento
+
+[33mcommit fb2ea412f421875a12e0c930625aa8faa5243e17[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 10 14:54:58 2026 -0600
+
+    convirtiendo lectura continuacion
+
+[33mcommit 1768a17fdaf05d8b1db8f46ccd7a79c2740d7470[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 10 14:51:18 2026 -0600
+
+    convirtiendo lectura
+
+[33mcommit 319055a3b6a7d8923ea99750ad1029050107da5f[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 10 14:23:24 2026 -0600
+
+    modificando con decoder
+
+[33mcommit ac6a6d83f672f42e75625668a9eeaba76114d31d[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 10 13:52:56 2026 -0600
+
+    explicacion del ADC
+
+[33mcommit 5a4e9a1890df3a7c7c6fdb29469462fde18cf9c9[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 10 12:36:24 2026 -0600
+
+    prueba de actualizacion
+
+[33mcommit c86faaa94af2e12a903ef1461b61c3f89d89b1e2[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 10 12:35:57 2026 -0600
+
+    prueba de actualizacion
+
+[33mcommit 277857463950d386dd42023638d3c836e30ec8f4[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 10 12:31:56 2026 -0600
+
+    nuevos directorios
+
+[33mcommit 945a84a99783b86e6fe63911b5bb334832e46b3e[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Thu Sep 10 12:31:56 2026 -0600
+
+    creando codigo
+
+[33mcommit 15a4cd92e8c062d6642a39038fcdae5d9ac9242f[m
+Author: arduinoenparques <arduinoenparques@gmail.com>
+Date:   Thu Sep 10 12:16:07 2026 -0600
+
+    continuando la programacion
+
+[33mcommit 64c3760b5c3c13646738c27c558fcca1d29d23da[m
+Author: arduinoenparques <arduinoenparques@gmail.com>
+Date:   Wed Sep 9 15:51:58 2026 -0600
+
+    continuacion
+
+[33mcommit c85a30e735f198bb5abc5f952946382654b8ddfb[m
+Author: arduinoenparques <usuario@Fmat_DelCubEle.inet.uady.mx>
+Date:   Tue Sep 8 14:35:09 2026 -0600
+
+    inicio de programacion para 7 segmtos
+
+[33mcommit ac27dfedd56a7d2e52f36f5a456ee71ee28aa9e4[m
+Author: arduinoenparques <usuario@Fmat_DelCubEle.inet.uady.mx>
+Date:   Fri Sep 4 15:29:13 2026 -0600
+
+    primer codigo
+
+[33mcommit f0b6ab56bb636828eebbfd9cd706f9efdf4b4aab[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Fri Sep 4 15:03:22 2026 -0600
+
+    Delete viernes directory
+
+[33mcommit dd536bccdfa90e2b69bf45cbd56b9fd06f6a8616[m
+Author: arduinoenparques <usuario@Fmat_DelCubEle.inet.uady.mx>
+Date:   Fri Sep 4 14:24:07 2026 -0600
+
+    nuevo hola.py
+
+[33mcommit 3b1025dcc5b5474e88cbb73656515ea6bdad35f0[m
+Author: arduinoenparques <usuario@Fmat_DelCubEle.inet.uady.mx>
+Date:   Fri Sep 4 14:18:51 2026 -0600
+
+    borrarchivo
+
+[33mcommit a505bd3fb1a4d6cd485d7f838425beed133cdeeb[m
+Author: arduinoenparques <usuario@Fmat_DelCubEle.inet.uady.mx>
+Date:   Fri Sep 4 14:03:37 2026 -0600
+
+    3
+
+[33mcommit f45de3fcefb3bf9dd47646f82db3c988df844196[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Fri Sep 4 14:01:05 2026 -0600
+
+    Replace 'hola' and 'mundo' with 'cero'
+
+[33mcommit fccbe8527207877f1b7b97b41bb45f11ec667197[m
+Author: arduinoenparques <usuario@Fmat_DelCubEle.inet.uady.mx>
+Date:   Fri Sep 4 13:59:45 2026 -0600
+
+    nuevo dato
+
+[33mcommit c116393c39dd9fb14eb6b2dcf446def5212a3ac8[m
+Author: arduinoenparques <275324072+arduinoenparques@users.noreply.github.com>
+Date:   Fri Sep 4 13:46:26 2026 -0600
+
+    Update 'hola mundo 1' to 'hola mundo 10'
+
+[33mcommit 998522b0f6223eda3e95dc2c4c2c3dc57845ee6b[m
+Author: arduinoenparques <usuario@Fmat_DelCubEle.inet.uady.mx>
+Date:   Fri Sep 4 13:39:09 2026 -0600
+
+    ok
