@@ -2,6 +2,16 @@
 #include <MatrizLed.h>
 #include <LiquidCrystal.h>
 
+byte Pacman1[8]={
+0B00000,
+0B11111,
+0B11000,
+0B11000,
+0B11000,
+0B11000,
+0B11111,
+0B00000
+ };
 
 LiquidCrystal MiLCD (A1,A2,6,5,4,3);     //rs,enable,D4,D5,D6,D7
 
@@ -22,6 +32,10 @@ float voltajecompleto;
 
 int direccionInicial = 0;
 
+
+
+
+
 MatrizLed Mipantalla;
 #include "lecturabitxbit.h"
 #include "escribeenMemoria.h"
@@ -40,16 +54,16 @@ void setup() {
   Mipantalla.begin(9, 7, 8, 1); // dataPin, clkPin, csPin, numero de matrices de 8x8
   Mipantalla.rotar(false);
   MiLCD.begin(16,2);
-  
+   MiLCD.createChar(2, Pacman1);
 }
 
 void espera() {
-  delay(500);
+  delay(100);
 }
 
 void loop() {
-  espera();
-  lecturabitxbit();
+  //espera();
+ /*lecturabitxbit();
   escribeEeprom();
   Serial.println(voltaje, BIN);
   imprimeLecturas();
@@ -60,6 +74,8 @@ void loop() {
   char convertir [8];
   itoa(voltaje,convertir,10);   
   Mipantalla.borrar();
-  Mipantalla.escribirFraseScroll(convertir,250);
+  Mipantalla.escribirFraseScroll(convertir,50);*/
   imprimeLCD();
+  
+  MiLCD.write(2);
 }
