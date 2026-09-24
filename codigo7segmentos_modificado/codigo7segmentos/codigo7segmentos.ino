@@ -1,6 +1,9 @@
 #include <EEPROM.h>
 #include <MatrizLed.h>
+#include <LiquidCrystal.h>
 
+
+LiquidCrystal MiLCD (A1,A2,6,5,4,3);     //rs,enable,D4,D5,D6,D7
 
 #define PIN_A 13
 #define PIN_B 12
@@ -13,8 +16,9 @@ int b1;
 int c1;
 int d1;
 
-int valor = 0;      // valor obtenido de la lectura
+float valor = 0;      // valor obtenido de la lectura
 int voltaje = 0;
+float voltajecompleto;
 
 int direccionInicial = 0;
 
@@ -23,6 +27,7 @@ MatrizLed Mipantalla;
 #include "escribeenMemoria.h"
 #include "mensajesImpresos.h"
 #include "datosAlDecoder.h"
+#include "usandoLCD.h"
 
 void setup() {
   Serial.begin(9600);
@@ -34,6 +39,7 @@ void setup() {
 
   Mipantalla.begin(9, 7, 8, 1); // dataPin, clkPin, csPin, numero de matrices de 8x8
   Mipantalla.rotar(false);
+  MiLCD.begin(16,2);
   
 }
 
@@ -55,5 +61,5 @@ void loop() {
   itoa(voltaje,convertir,10);   
   Mipantalla.borrar();
   Mipantalla.escribirFraseScroll(convertir,250);
-
+  imprimeLCD();
 }
