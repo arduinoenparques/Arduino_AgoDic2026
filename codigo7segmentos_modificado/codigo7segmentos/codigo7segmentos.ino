@@ -1,6 +1,7 @@
 #include <EEPROM.h>
 #include <MatrizLed.h>
 
+
 #define PIN_A 13
 #define PIN_B 12
 #define PIN_C 11
@@ -33,10 +34,11 @@ void setup() {
 
   Mipantalla.begin(9, 7, 8, 1); // dataPin, clkPin, csPin, numero de matrices de 8x8
   Mipantalla.rotar(false);
+  
 }
 
 void espera() {
-  delay(1000);
+  delay(500);
 }
 
 void loop() {
@@ -50,7 +52,8 @@ void loop() {
   leeEEPROM();
   espera();
   char convertir [8];
-  itoa(voltaje,convertir,10);
+  itoa(voltaje,convertir,10);   
   Mipantalla.borrar();
   Mipantalla.escribirFraseScroll(convertir,250);
+
 }
